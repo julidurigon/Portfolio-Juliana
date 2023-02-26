@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" 
+integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" 
+crossorigin="anonymous"></script> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" 
+integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" 
+crossorigin="anonymous"></script> 
+	<title>Locadora Fita Cassete</title>
+</head>
+<body>
+	<nav class=" navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<!-- Imagem e Título -->
+			<img style="width:5%;" src="cinema.png">
+			<a class="navbar-brand" href="#topo">Locadora Fita Cassete</a>
+			<!-- Div com itens clicáveis -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" href="#tabFilmes">Filmes Disponíveis</a>
+					</li>
+					
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#drop" id="dropGeneros" role="button" data-bs-toggle="dropdown">Filmes por Categoria </a>
+						<ul class="dropdown-menu">
+							
+							<li><a class="dropdown-item" href="#gAcao">Ação		</a></li>
+							<li><a class="dropdown-item" href="#gAnim">Animação	</a></li>
+							<li><a class="dropdown-item" href="#gRoman">Romance	</a></li>
+							<li><a class="dropdown-item" href="#gSus">Suspense	</a></li>
+							<li><a class="dropdown-item" href="#gCom">Comedia	</a></li>
+							<li><a class="dropdown-item" href="#gDram">Drama	</a></li>
+						</ul>
+				
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#cadFilmes">Cadastrar Filme</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+
+	<h1 class="display-1 text-center mb-5">Locadora Fita Cassete</h1>
+
+	
+	<div class="container">
+		<table class="table table-striped table-hover">
+			
+			<thead>
+				<tr>
+					<th scope="col">Código		</th>
+					<th scope="col">Título		</th>
+					<th scope="col">Diretor		</th>
+					<th scope="col">Lançamento	</th>
+					<th scope="col">Gênero		</th>
+					<th scope="col">Ator e Atriz </th>
+					<th scope="col">IMDb 		</th> 
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAcao">Ação</th>
+				</tr>
+				
+			  	<tr>
+					<th scope="row">1</th>
+					<td>Príncipe da Pérsia: As Areias do Tempo</td>
+					<td>Mike Newell</td>
+					<td>3 de junho de 2010</td>
+					<td>Ação</td>
+					<td>Julia</td>
+					<td>8,7/10</td>
+				</tr>
+				<!-- Segundo filme -->
+				<tr>
+					<th scope="row">2</th>
+					<td>O Imperio Contra ataca</td>
+					<td>Irvin Kershner</td>
+					<td>21 de Julho de 1990</td>
+					<td>Ação</td>
+					<td> Mark Hamill</td>
+					<td> 8,7/10</td>
+				</tr>
+				<!-- Terceiro filme -->
+				<tr>
+					<th scope="row">3</th>
+					<td>Matrix</td>
+					<td>Lana Wachowski, Lilly Wachowsk</td>
+					<td>21 de Maio de 1999</td>
+					<td>Ação</td>
+					<td> Keanu Reeves</td>
+					<td> 8,7/10</td>
+				</tr>
+
+					<!-- Quarto filme -->
+				<tr>
+					<th scope="row">4</th>
+					<td>Batman: O Cavaleiro das Trevas</td>
+					<td>Christopher Nolan</td>
+					<td>18 de julho de 2008</td>
+					<td>Ação</td>
+					<td>Christian Bale </td>
+					<td> 9,0/10</td>
+				</tr>
+				<!-- Quinto filme -->
+				<tr>
+					<th scope="row">5</th>
+					<td>Viúva Negra</td>
+					<td>Cate Shortland</td>
+					<td>08 de julho de 2021</td>
+					<td>Ação</td>
+					<td> Scarlett Jhansson </td>
+					<td> 8,7/10</td>
+				</tr>
+
+
+				<!-- Linha expandida com 2 animação -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAnim">Animação</th>
+				</tr>
+				<!-- Quarto Filme filme -->
+			  	<tr>
+			  		<th scope="row">6</th>
+			    	<td>A Viagem de Chihiro</td>
+			    	<td>Hayao Miyazaki</td>
+					<td>18 de julho de 2003</td>
+					<td>Animação</td>
+					<td>Rumi Hiiragi (voz)</td>
+					<td>8,60/10</td>
+				</tr>
+				<!-- Quinto filme -->
+				<tr>
+					<th scope="row">7</th>
+					<td>Túmulo dos Vagalume</td>
+					<td>Isao Takahata</td>
+					<td>24 de novembro de 1989</td>
+					<td>Animação</td>
+					<td>TSUTOMU TATSUMI (voz)</td>
+					<td>8,5/10</td>
+				</tr>
+				<!-- Sexto filme -->
+				<tr>
+					<th scope="row">8</th>
+					<td>Rei Leão</td>
+					<td>Rob Minkoff, Roger Allers</td>
+					<td>08 de julho de 1994</td>
+					<td>Animação</td>
+					<td>James Earl Jones (voz)</td>
+					<td>8,5/10</td>
+				</tr>
+				<!-- Setimo filme -->
+				<tr>
+					<th scope="row">9</th>
+					<td> Frozen- Uma Aventura Congelante</td>
+					<td>Chris Buck, Jennifer Lee</td>
+					<td>27 de novembro de 2013</td>
+					<td>Animação</td>
+					<td>Kristen Bell (Ana), Idina Menzel (Elza)</td>
+					<td>7,4/10</td>
+				</tr>
+				<!-- Oitavo filme -->
+				<tr>
+					<th scope="row">10</th>
+					<td>Rio 2</td>
+					<td>Carlos Saldanha</td>
+					<td>27 de março de 2014</td>
+					<td>Animação</td>
+					<td>Jesse Eisenberg</td>
+					<td>8/9</td>
+				</tr>
+
+		<!-- Linha expandida com gênero 3 romance -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAnim">Romance</th>
+				</tr>	
+				<!-- 11 filme -->
+			  	<tr>
+			  		<th scope="row">11</th>
+			    	<td>Dirty Dancing: ritmo quente</td>
+			    	<td>Emile Ardolino</td>
+					<td>25 de setembro de 1987</td>
+					<td>Romance</td>
+					<td>Jennifer Grey, Patrick Swayze</td>
+					<td>7/10</td>
+				</tr>
+				<!-- 12 filme -->
+				<tr>
+					<th scope="row">12</th>
+					<td>Amor à segunda vista</td>
+					<td>Marc Lawrence</td>
+					<td>12 de dezembro de 2002</td>
+					<td>Romance</td>
+					<td>Sandra Bullock</td>
+					<td>6,1/10</td>
+				</tr>
+				<!-- 13 filme -->
+				<tr>
+					<th scope="row">13</th>
+					<td>Ghost: do outro lado da vida</td>
+					<td>Jerry Zucker</td>
+					<td>01 de novembro de 1990</td>
+					<td>Romance</td>
+					<td>Demi Moore, Patrick Swayze</td>
+					<td>7,1/10</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">14</th>
+					<td>Simplesmente Acontece</td>
+					<td>Christian Ditter</td>
+					<td>06 de novembro de 2014</td>
+					<td>Romance</td>
+					<td>Sam Claflin, Lily Collins</td>
+					<td>7,1/10</td>
+				</tr>
+				
+					<th scope="row">15</th>
+					<td>Uma Linda Mulher</td>
+					<td>Garry Marshall</td>
+					<td>23 de março de 1990</td>
+					<td>Romance</td>
+					<td> Richard Gere, Julia Robert</td>
+					<td>8/9</td>
+				</tr>
+				<!-- Linha expandida com gênero 4 suspense -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAnim">Suspense</th>
+				</tr>	
+				<!-- 16 filme -->
+			  	<tr>
+			  		<th scope="row">16</th>
+			    	<td>Corra</td>
+			    	<td>Jordan Peele</td>
+					<td>18 de maio de 2017</td>
+					<td>Suspense</td>
+					<td>Daniel Kaluuya</td>
+					<td>8,6/10</td>
+				</tr>
+				<!-- 17 filme -->
+				<tr>
+					<th scope="row">17</th>
+					<td>Cidade de Deus</td>
+					<td>Fernando Meirelles, Kátia Lund</td>
+					<td>30 de agosto de 2002</td>
+					<td>Suspense</td>
+					<td>Alexandre Rodrigues</td>
+					<td>8,6/10</td>
+				</tr>
+				<!-- 18 filme -->
+				<tr>
+					<th scope="row">18</th>
+					<td>Garota Exemplar</td>
+					<td>David Fincher</td>
+					<td>02 de outibro de 2014</td>
+					<td>Suspense</td>
+					<td>Rosamund Pike</td>
+					<td>8,1/10</td>
+				</tr>
+				<!-- 19filme -->
+				<tr>
+					<th scope="row">19</th>
+					<td>Seven</td>
+					<td> David Fincher</td>
+					<td>15 de dezembro de 1995</td>
+					<td>Suspense</td>
+					<td>Brad Pitt</td>
+					<td>8,1/10</td>
+				</tr>
+				<!-- 20 filme -->
+				<tr>
+					<th scope="row">20</th>
+					<td>Bird Box</td>
+					<td>Susanne Bier</td>
+					<td>14 de dezembro de 2018</td>
+					<td>Suspense</td>
+					<td>Sandra Bullonk</td>
+					<td>8/9</td>
+				</tr>
+
+				<!-- Linha expandida com gênero 5 comedia -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gCom">Comedia</th>
+				</tr>
+
+				<!-- 21  filme -->
+				<tr>
+					<th scope="row">21</th>
+					<td>Apertem os Cintos, o Piloto Sumiu</td>
+					<td>Jim Abrahams, David Zucker, Jerry Zucker</td>
+					<td>26 de dezembro de 1980</td>
+					<td>Comedia</td>
+					<td>Robert Hays</td>
+					<td>7,7/10</td>
+				</tr>
+				<!-- Vigéssimo  filme -->
+				<tr>
+					<th scope="row">22</th>
+					<td> Os Caça-Fantasmas</td>
+					<td>Ivan Reitman</td>
+					<td>20 de dezembro de 1984</td>
+					<td>Comédia</td>
+					<td>Bill Murray</td>
+					<td>7,8/10</td>
+				</tr>
+				<!-- Vigessimo primeiro filme -->
+				<tr>
+					<th scope="row">23</th>
+					<td>Pulp Fiction: Tempo de Violência</td>
+					<td>Quentin Tarantino</td>
+					<td>18 de fevereiro de 1995</td>
+					<td>Comédia</td>
+					<td>John Travolta</td>
+					<td>8,9/10</td>
+				</tr>
+				<!-- vigessimo segundo filme -->	
+				<tr>
+					<th scope="row">24</th>
+					<td>Estaremo sempre Juntos</td>
+					<td>Guillaume Canet</td>
+					<td>14 de novembro de 2019</td>
+					<td>Comédia</td>
+					<td> César Award, Audience Award</td>
+					<td>8/9</td>
+				</tr>
+				<!-- vigessimo terceiro filme -->
+				<tr>
+					<th scope="row">25</th>
+					<td>Debi & Loide - Dois Idiotas em Apuros</td>
+					<td> Peter Farrelly</td>
+					<td>27 de fevereiro de 1995</td>
+					<td>Comédia</td>
+					<td>Jim Carrey, Jeff Daniels</td>
+					<td>8/9</td>
+				</tr>
+
+				<!-- Linha expandida com gênero 6 drama -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gDram">Drama</th>
+				</tr>
+
+
+				<tr>
+					<th scope="row">26</th>
+					<td>Um Sonho de Liberdade</td>
+					<td>Frank Darabont</td>
+					<td>17 de março de 1995</td>
+					<td>Drama</td>
+					<td>Morgan Freeman</td>
+					<td>9,3/10</td>
+				</tr>
+				<!-- vigessimo quinto filme -->
+				<tr>
+					<th scope="row">27</th>
+					<td>O Poderoso Chefão</td>
+					<td>Francis Ford Coppola</td>
+					<td>7 de julho de 1972</td>
+					<td>Drama</td>
+					<td>Al Pacino</td>
+					<td>9,2/10</td>
+				</tr>
+				<!-- vigessimo sexto filme -->
+				<tr>
+					<th scope="row">28</th>
+					<td>A Lista de Schindler</td>
+					<td>Steven Spielberg</td>
+					<td>31 de dezembro de 1993</td>
+					<td>Liam Neeson</td>
+					<td>Drama</td>
+					<td>9,0/10</td>
+				</tr>
+				<!-- vigessimo setimo filme -->
+				<tr>
+					<th scope="row">29</th>
+					<td>O Menino do Pijama Listrado</td>
+					<td>Mark Herman</td>
+					<td>12 de setembro de 2008</td>
+					<td>Drama</td>
+					<td>Asa Butterfield</td>
+					<td>7,1/9</td>
+				</tr>
+				<!-- vigessimo oitavo filme -->
+				<tr>
+					<th scope="row">30</th>
+					<td>Um olhar do Paraíso</td>
+					<td> Peter Jackson</td>
+					<td> 19 de fevereiro de 2010</td>
+					<td>Drama</td>
+					<td>Saoirse Ronan,Marky Mark</td>
+					<td>8/9</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- Final da tabela -->
+	</div>
+
+	<!-- Divisor de página -->
+	<div class="m-5">
+		<hr class="border-primary border-3 opacity-75">
+	</div>
+
+	<h2 class="text-center mb-5"> CADASTRO DE FILMES</h2>
+
+	<div class="container mb-5">
+	
+	<form>
+		<div class="row">
+		<div class="mb-3">
+				<label for="anofilme" class="form-label">Ano:</label>
+				<input type="Date" id="anofilme" class="form-control"> 
+			</div>
+
+
+		<!--codigo (isso é um comentário sem funçao no codigo)-->
+		<div class="row">
+			<div class="mb-3 col form-check">
+				<input type="text" id="codFilme" class="form-control">
+				<label for="codFilme" class="form-label">Codigo:</label>
+				</div>
+
+			<!--diretor-->
+			<div class="row">
+			<div class="mb-3 col form-check">
+				<input type="text" id="dirFilme" class="form-control">
+				<label for="dirFilme" class="form-label">Diretor:</label>
+			</div>
+			<!--ator/atriz-->
+
+			<div class="row">
+			<div class="mb-3 col form-check">
+				<input type="text" id="atoatriz" class="form-control">
+				<label for="atoatriz" class="form-label">Ator e Atriz:</label>
+			</div>
+			
+			<div class="row">
+			<div class="mb-3 col form-check">
+				<input type="text" id="imdb" class="form-control">
+				<label for="imdb" class="form-label">IMDb:</label>
+			</div>
+
+
+			  <!--genero-->
+			<div class="row">
+			<div class="mb-3 col form-check">
+				<label for="radgenAcao" class="form-label">Ação:</label>
+				<input type="radio" name="radio"  id="radgenAcao" class="form form-check-input" value="acao">
+			</div>
+
+		<div class="row">
+			<div class="mb-3 col form-check">
+				<label for="radgenAnima" class="form-label">Animação:</label>
+				<input type="radio" name="radio"  id="radgenAnima" class="form form-check-input" value="animação">
+			</div>
+			<div class="row">
+			<div class="mb-3 col form-check">
+				<label for="radgenromance" class="form-label">Romance:</label>
+				<input type="radio" name="radio"  id="radgenromance" class="form form-check-input" value="romance">
+			</div>
+			<div class="row">
+			<div class="mb-3 col form-check">
+				<label for="radgensus" class="form-label">Suspense:</label>
+				<input type="radio" name="radio"  id="radgensus" class="form form-check-input" value="suspense">
+			</div>
+			<div class="row">
+			<div class="mb-3 col form-check">
+				<label for="radgencom" class="form-label">Comédia:</label>
+				<input type="radio" name="radio"  id="radgencom" class="form form-check-input" value="comédia">
+			</div>
+			<div class="row">
+			<div class="mb-3 col form-check">
+				<input type="radio" name="radio"  id="radgendr" class="form form-check-input" value="drama">
+				<label for="radgendr" class="form-label">Drama:</label>
+				</div>
+				<!--fim lista de genero-->
+		
+		<div class="col-auto">
+			<button type="submit" class="btn btn-primary mb-3">Cadastrar</button>
+		</div>
+</div>
+</form>
+</body>

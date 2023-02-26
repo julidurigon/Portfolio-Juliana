@@ -1,0 +1,100 @@
+
+body{
+	background: blanchedalmond;
+	font-family:black
+}
+
+.frame {
+	position: absolute;
+	background-color: white;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	margin-top: -200px;
+	margin-left:-190px;
+	box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.6);
+}
+
+.frame, .card {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flip-me {
+	position: absolute;
+	top: 30%;
+	left: 77%;
+	font-size: 15px;
+	transform: rotate(-90deg);
+	color:beige; (255, 255, 255, 0.2);
+}
+
+.front h1 {
+	font-family: Satisfy, cursive;
+	font-size: 128px;
+	margin: 16px 80px;
+	color: chocolate;
+}
+
+.card:hover .flip{
+	transform: rotateX(180deg) translate3d(0, 0, 0);
+	box-shadow: 8px -10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.flip {
+	transform-style: preserve-3d;
+	transition: all 0.7s ease-in-out;
+	perspective: 1000px;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	width: 100%;
+	height: 100%;
+	background: #201c29;
+}
+
+.card .back {
+	transform: rotateX(-180deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.back {
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.back h2 {
+	font-size: 36px;
+	margin: 8px;
+	color: chocolate;
+}
+
+.back h3 {
+	color: rgba(255, 255, 255, 0.7);
+	font-family: satisfy, cursive;
+	font-weight: 300;
+	font-size: 32px;
+	margin: 32px;
+}
+
+.back h6 {
+	color: rgba(255, 255, 255, 0.7);
+	font-family: satisfy, cursive;
+	font-weight: 75;
+	font-size: 10px;
+	margin: 10px;
+}
+
+.back p {
+	color: white;
+	font-family: satisfy, cursive;
+	font-weight: 25;
+	font-size: 8px;
+	margin: 8 px;
+}
+
